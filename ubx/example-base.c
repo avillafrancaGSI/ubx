@@ -3,7 +3,7 @@
 int main() {
   /* Setup UART connection to UBlox */
   uart_t uart;
-  if (uart_connect(&uart, "/dev/ttyACM0") != 0) {
+  if (uart_connect(&uart, "COM6") != 0) {
     LOG_ERROR("Failed to connect to ublox!");
     return -1;
   }
